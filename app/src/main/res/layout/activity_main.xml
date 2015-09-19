@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/title_margin"
+        android:text="@string/main_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/button_layout_margin_top">
+
+        <Button
+            android:id="@+id/btnSpotify"
+            android:layout_width="@dimen/buttons_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/title_margin"
+            android:layout_marginTop="@dimen/title_margin"
+            android:text="@string/btn_spotify_text" />
+
+        <Button
+            android:id="@+id/btnScores"
+            android:layout_width="@dimen/buttons_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnSpotify"
+            android:layout_alignStart="@+id/btnSpotify"
+            android:layout_below="@+id/btnSpotify"
+            android:layout_marginBottom="@dimen/title_margin"
+            android:layout_marginTop="@dimen/title_margin"
+            android:text="@string/btn_scores_text" />
+
+        <Button
+            android:id="@+id/btnLibrary"
+            android:layout_width="@dimen/buttons_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnScores"
+            android:layout_alignRight="@+id/btnScores"
+            android:layout_below="@+id/btnScores"
+            android:layout_marginBottom="@dimen/title_margin"
+            android:layout_marginTop="@dimen/title_margin"
+            android:text="@string/btn_library_text" />
+
+        <Button
+            android:id="@+id/btnBigger"
+            android:layout_width="@dimen/buttons_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnLibrary"
+            android:layout_alignRight="@+id/btnLibrary"
+            android:layout_below="@+id/btnLibrary"
+            android:layout_marginBottom="@dimen/title_margin"
+            android:layout_marginTop="@dimen/title_margin"
+            android:text="@string/btn_bigger_text" />
+
+        <Button
+            android:id="@+id/btnReader"
+            android:layout_width="@dimen/buttons_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnBigger"
+            android:layout_alignStart="@+id/btnBigger"
+            android:layout_below="@+id/btnBigger"
+            android:layout_marginBottom="@dimen/title_margin"
+            android:layout_marginTop="@dimen/title_margin"
+            android:text="@string/btn_reader_text" />
+
+        <Button
+            android:id="@+id/btnCapStone"
+            android:layout_width="@dimen/buttons_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnReader"
+            android:layout_alignRight="@+id/btnReader"
+            android:layout_below="@+id/btnReader"
+            android:text="@string/btn_capstone_text"
+            android:layout_marginBottom="@dimen/title_margin"
+            android:layout_marginTop="@dimen/title_margin"/>
+    </RelativeLayout>
+
+</RelativeLayout>
